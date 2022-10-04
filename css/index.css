@@ -3,23 +3,56 @@ body {
 }
 h1 {
     font-family: Montserrat,sans-serif;
-    font-size: 3rem;
-    color: #ececec;
-    line-height: 85%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
 }
-/* .item {
-    background-color: #5D5D5D;
-    width: 320px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: auto;
-} */
+h2 {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;  
+    color: #808191;
+}
 .item {
-    background-color: #5D5D5D;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "img"
+                         "title"
+                         "links";
+    /* grid-column-gap: 1rem;
+    grid-row-gap: 1rem; */
+    }
+
+.item div {
+    border: 2px dashed rgb(109, 167, 21);
 }
+.item-img {
+    grid-area: img;
+    background-image: url(../img/bozhik.jpg);
+    background-size: cover;
+}
+.item-img img {
+    width: 320px;
+    height: 320px;
+    grid-area: img;
+    max-height: 30%;
+    --delay:0.4s;
+}
+.item-links {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "link1 link2 link3"
+                         "link4 link5 link6";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
 
 @media (min-width: 440px) {
     .item {
@@ -47,3 +80,14 @@ h1 {
     width: calc(100% - 20px);
     border-radius: 24px;
     margin: 10px auto; */
+
+/* .item {
+    background-color: #5D5D5D;
+    width: 320px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+} */
