@@ -1,4 +1,4 @@
-# ALL MY LINKS - a project for my links `LINKS` 🧨
+# ALL MY LINKS - a project for my `LINKS` 🧨
 <pre>
 This project was created to create a redirect to the links I need, to shorten existing links and to practice writing <kbd>CODE</kbd> 
 </pre>
