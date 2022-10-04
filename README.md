@@ -1,8 +1,8 @@
-# ANIMATED POSTER - a project for learning `HTML` and `CSS Animations` 👨‍💻
+# ALL MY LINKS - a project for my links `LINKS` 🧨
 <pre>
-This project was created to continue the practice of site layout and to learn how to make web animations
+This project was created to create a redirect to the links I need, to shorten existing links and to practice writing <kbd>CODE</kbd> 
 </pre>
-![Alt-текст](https://github.com/bozzhik/animated/blob/main/img/scroll.gif "wiki")
+![Alt-текст](https://github.com/bozzhik/z/blob/main/img/scroll.gif "wiki")
 <pre>
-This is an integral part of the following projects for the <kbd>ЮЗБ ФАРМ</kbd> organization
+This is an integral part of a simple projects <kbd>simple projects</kbd>
 </pre>
