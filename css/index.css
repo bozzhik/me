@@ -1,0 +1,131 @@
+body {
+    background-color: #0A0A0A;
+}
+h1 {
+    font-family: 'pp_neuebitbold';
+    font-size: 3rem;
+    color: #5D5D5D;
+    line-height: 85%;
+}
+.sistem-line {
+    margin: 1% auto 0% auto;
+    max-width: 98%;
+    background-color: #0A0A0A;
+    /* border: 2px dashed rgba(157, 30, 231, 0.704); */
+}
+.text {
+    padding-top: 30px;
+    color: #efefef;
+    width: 21rem;
+    white-space: nowrap;  /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    animation: printed_text 1.5s steps(29);
+}  
+.text-hide {
+    bottom: 49px;
+    position: relative;
+    font-size: 1rem;
+    padding-top: 30px;
+    color: #efefef00;
+    width: 21rem;
+    border-right: 5px solid #efefef; /* рисуем курсор */
+    animation: cursor 0.2s step-end infinite,
+    printed_text 1.5s steps(29),
+    blink-caret .7s step-end infinite;
+}      
+@keyframes printed_text {
+  from{
+      width: 0;
+  }
+}  
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #efefef }
+}
+.login {
+    margin: 1% auto 1% auto;
+    max-width: 98%;
+    height: 545px;
+    /* border: 2px dashed rgba(157, 30, 231, 0.704); */
+    opacity: 0;
+    animation: log 2s forwards;
+}
+@keyframes log {
+    0% {opacity: 0;}
+    99% {opacity: 0; animation-timing-function: ease-in;}
+    100% {opacity: 1; animation-timing-function: ease-in;}
+}
+.window {
+    position: relative;
+    margin: 0 auto;
+    max-width: 40%;
+    z-index: 1;
+}
+.space {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2;
+}
+.cross {
+    position: relative;
+    padding-top: 1.4%;
+    padding-left: 2%;
+    max-width: 9%;
+    z-index: 3;
+}
+.cross-dye:hover{
+    fill: #ED1B24;
+}
+.form {
+    padding-top: 5%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 4%;
+}
+form div:nth-of-type(1) {
+    padding: 2%;
+}
+form div:nth-of-type(2) {
+    padding: 5%;
+}
+input {
+    padding-left: 5%;
+    font-family: 'pp_neuebitbold'; 
+    font-size: 3rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid #111;
+}
+input:hover {
+    outline: 3px solid #5D5D5D;
+}
+input:focus {
+    color: #efefef;
+    background-color: #0A0A0A;
+    outline: 3px solid #efefef;
+}
+button { 
+    box-sizing: border-box; 
+    font-size: 5rem;
+    color: #efefef;
+    font-family: 'pp_neuebitbold'; 
+    outline: 2px solid #efefef;
+    background-color: #131313;
+}
+button:hover {
+    background-color: #efefef;
+    outline: 2px solid #0A0A0A;
+    color: #0A0A0A;
+}
+button:acrtive {
+    background-color: #efefef;
+    outline: 2px solid #0A0A0A;
+    color: #5D5D5D;
+}
