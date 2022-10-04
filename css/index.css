@@ -16,15 +16,16 @@ h2 {
     color: #5d5d5d;
 }
 .item {
+    position: relative;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     grid-template-areas: "img"
-                         "title"
                          "links";
     /* grid-column-gap: 1rem;
     grid-row-gap: 1rem; */
     z-index: 2;
+    box-shadow:0 0 20px #555;
     }
 /* .item div {
     border: 2px dashed rgba(109, 167, 21, 0.5);
@@ -42,21 +43,20 @@ h2 {
     max-height: 30%;
 }
 .item-title {
-    background-color: #1e1e1e;
-    grid-area: title;
+    position: absolute;
+    max-width: 100%;
+    top: 2%;
+    left: 0.7%;
 }
-.item-title :nth-child(1) {
-    margin-left: 4%;
-    margin-top: 5%;
-}
+/* .item-title :nth-child(1) {
+
+} */
 .item-title :nth-child(2)  {
-    margin-left: 4%;
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin-top: 4%;
 }
 .item-links {
     padding: 6% 0;
-    background-color: #0d0d0d;
+    background-color: #1e1e1e;
     grid-area: links;
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -80,7 +80,6 @@ h2 {
 .link1 img {
     width: 60px;
     height: 60px;
-    background: #191919;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -194,6 +193,12 @@ h2 {
 }
 .link-title {
     color: #fff;
+}
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 175%;
+    box-shadow:0 0 20px #555;
 }
 
 
