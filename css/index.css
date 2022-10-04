@@ -46,9 +46,11 @@ h2 {
     grid-area: title;
 }
 .item-title :nth-child(1) {
+    margin-left: 4%;
     margin-top: 5%;
 }
 .item-title :nth-child(2)  {
+    margin-left: 4%;
     margin-top: 2%;
     margin-bottom: 3%;
 }
@@ -190,7 +192,9 @@ h2 {
     justify-content: center;
     margin: auto;
 }
-
+.link-title {
+    color: #fff;
+}
 
 
 @media (min-width: 440px) {
@@ -198,7 +202,7 @@ h2 {
         width: 350px;
         height: 350px;
         position: absolute;
-        top: 40%;
+        top: 34.5%;
         left: 50%;
         transform: translate(-50%,-50%);
         margin: auto;
