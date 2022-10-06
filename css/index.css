@@ -1,39 +1,25 @@
 * {text-decoration: none;}
 a {color: #DADADA;}
 body {background-color: #0A0A0A;}
-h1 {
-    font-family: Montserrat,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1rem;
-    color: #DADADA;
-}
-h2 {
-    font-family: Montserrat,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1rem;  
-    color: #5d5d5d;
-}
-.title {z-index: 1; position: fixed; top: 1.7%; left: 0.7%;}
-.title :nth-child(2)  {margin-top: 4%;}
+h1 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 500; color: #DADADA;}
+h2 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 500; color: #5d5d5d;}
+.title {z-index: 1; position: fixed; top: 1.7%; left: 0.7%; font-size: 0.8rem; line-height: 1rem;}
+.title :nth-child(2)  {margin-top: 4%; font-size: 1rem; line-height: 1rem; }
 @media (min-width: 440px) {
 .item {
     width: 350px;
-    height: 270px;
+    height: 269px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
-    background-color: #101010;  
+    background-color: #101010;
 }
 }
-.item-title {margin: 5% 0 5% 3%;}
-.item-title :nth-child(2)  {margin-top: 2.5%;}
+.item-title {margin: 5% 0 5% 3%; font-size: 0.8rem; line-height: 1rem;}
+.item-title :nth-child(2)  {margin-top: 2.5%; font-size: 1rem; line-height: 1rem;}
 
 
 .item-links {
@@ -57,6 +43,9 @@ h2 {
     color: #808191;
     white-space: nowrap; 
 }
+.link4 {
+    background-color: #131313;
+}
 .link1 img, .link2 img, .link3 img, .link4 img, .link5 img, .link6 img {
     width: 60px;
     height: 60px;
@@ -68,5 +57,5 @@ h2 {
 }
 
 .item-links div:hover{
-    background-color: #5d5d5d;
+    background-color: #131313;
 }
