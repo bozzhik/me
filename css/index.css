@@ -20,8 +20,6 @@ h2 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 500; co
 }
 .item-title {margin: 5% 0 5% 3%; font-size: 0.8rem; line-height: 1rem;}
 .item-title :nth-child(2)  {margin-top: 2.5%; font-size: 1rem; line-height: 1rem;}
-
-
 .item-links {
     padding-top: 4%;
     max-width: 99.5%;
@@ -52,7 +50,6 @@ h2 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 500; co
     justify-content: center;
     margin: auto;
 }
-
 .item-links div:hover{
     background-color: #131313;
 }
