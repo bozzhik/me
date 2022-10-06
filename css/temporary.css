@@ -32,6 +32,7 @@ h2 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 400; co
     font-size: 1rem; line-height: 1rem;
 }
 .anim-shortcut {
+    z-index: 2;
     margin: 0 auto;
     margin-top: 10.5%;
     padding: 4%;
