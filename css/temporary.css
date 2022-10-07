@@ -55,11 +55,6 @@ h2 {font-family: Montserrat,sans-serif; font-style: normal; font-weight: 400; co
     60% { font-weight: 700; font-style: normal; text-decoration: none;text-transform: lowercase;}
     70% { font-weight: 400; font-style: italic; text-decoration: underline; text-decoration-thickness: 0.7rem; text-underline-offset: 3rem; text-transform: capitalize;}
 }
-
-@media (max-width: 19200px) {
-    .anim-shortcut {margin-top: 14.5%;}
-    .shortcut {font-size: 15rem;}
-}
 @media (max-width: 1000px) {
     .anim-shortcut {margin-top: 14.5%;}
     .shortcut {font-size: 13rem;}
