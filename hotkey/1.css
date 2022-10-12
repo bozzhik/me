@@ -2,13 +2,14 @@ body {background-color: #0A0A0A;}
 h1 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 600; color: #DADADA;}
 h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 300; color: #DADADA;}
 .text-logo h1 {font-size: 2.2rem; line-height: 1rem;}
-.shortcut {
+a {text-decoration: none;}
+.shortcut-text {
     font-family: Montserrat,sans-serif; 
     font-style: normal;
     font-weight: 600;
     color: #DADADA;
     text-align: center;
-    font-size: 15rem;
+    font-size: 17rem;
     animation: change-text 1.5s infinite;
 }
 @keyframes change-text {
@@ -20,14 +21,13 @@ h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 
     60% { font-weight: 700; font-style: normal; text-decoration: none;text-transform: lowercase;}
     70% { font-weight: 400; font-style: italic; text-decoration: underline; text-decoration-thickness: 0.7rem; text-underline-offset: 3rem; text-transform: capitalize;}
 }
-@media (max-width: 1000px) {
-    .anim-shortcut {margin-top: 14.5%;}
-    .shortcut {font-size: 13rem;}
+.block1 {
+    padding: 0.1% 0.2%;
 }
 .block1-grid {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.1fr 8.9fr 0.1fr; 
+    grid-template-rows: 0.1fr 0.8fr 0.1fr; 
     grid-template-areas: 
       "logo null"
       "shortcut shortcut"
@@ -48,7 +48,6 @@ h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 
 .text-right {
     grid-area: right;
 }
-
 .text-logo {
     grid-area: logo;
 }
@@ -57,17 +56,20 @@ h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 
     top: 2%;
     left: 1.5%;
 }
+.shortcut div {
+    margin: 9.5% auto;
+}
 .text-left, .text-right {
     font-size: 1rem; line-height: 1rem;
 }
-
-
-.anim-shortcut {
-    margin: 0 auto;
-    margin-top: 10.5%;
-    padding: 4%;
+.text-left h2 {
+    position: relative;
+    margin-left: 1.5%;
 }
-
+.text-right h2 {
+    position: relative;
+    margin-left: 71%;
+}
 
 @font-face {
     font-family:'SF Pro Display 300';
