@@ -70,16 +70,11 @@ a {text-decoration: none;}
     position: relative;
     margin-left: 71%;
 }
-
-@font-face {
-    font-family:'SF Pro Display 300';
-    src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.eot");
-}
 @font-face {
     font-family:'SF Pro Display';
     font-style:normal;
-    font-weight:600;
-    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf") format("truetype");
+    font-weight:300;
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf") format("truetype");
 }
 @font-face {
     font-family:'SF Pro Display';
@@ -88,3 +83,10 @@ a {text-decoration: none;}
     src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.eot");
     src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.ttf") format("truetype");
 }
+@font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:600;
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf") format("truetype");
+}
+
