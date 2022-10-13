@@ -1,7 +1,7 @@
 body {background-color: #0A0A0A;}
 h1 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 600; color: #DADADA;}
 h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 300; color: #DADADA;}
-.text-logo h1 {font-size: 2.2rem; line-height: 1rem;}
+.text-logo h1 {font-size: 2.5rem; line-height: 1rem;}
 a {text-decoration: none;}
 .shortcut-text {
     font-family: Montserrat,sans-serif; 
@@ -33,9 +33,9 @@ a {text-decoration: none;}
       "shortcut shortcut"
       "left right"; 
 }
-.block1-grid div {
+/* .block1-grid div {
     border: 1px dashed #7e7e7e;
-}
+} */
 .null {
     grid-area: null;
 }
