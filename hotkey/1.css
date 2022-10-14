@@ -70,6 +70,12 @@ a {text-decoration: none;}
     position: relative;
     margin-left: 71%;
 }
+
+.block3 {
+    padding-top: 20%;
+}
+
+
 @font-face {
     font-family:'SF Pro Display';
     font-style:normal;
