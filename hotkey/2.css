@@ -1,0 +1,99 @@
+body {background-color: #0A0A0A;}
+h1 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 600; color: #DADADA;}
+h2 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 300; color: #DADADA;}
+.text-logo h1 {font-size: 2.5rem; line-height: 1rem;}
+a {text-decoration: none;}
+.shortcut-text {
+    font-family: Montserrat,sans-serif; 
+    font-style: normal;
+    font-weight: 600;
+    color: #DADADA;
+    text-align: center;
+    font-size: 17rem;
+    animation: change-text 1.5s infinite;
+}
+@keyframes change-text {
+    10% { font-weight: 300; font-style: normal; text-decoration: none; text-transform: none;}
+    20% { font-weight: 500; font-style: italic; text-decoration: underline; text-decoration-thickness: 0.6rem; text-underline-offset: 2rem; text-transform: capitalize;}
+    30% { font-weight: 200; font-style: normal; text-decoration-line: line-through; text-decoration-thickness: 0.7rem; text-transform: none;}
+    40% { font-weight: 600; font-style: italic; text-decoration: none; text-transform: lowercase;}
+    50% { font-weight: 100; font-style: italic; text-decoration-line: line-through; text-decoration-thickness: 0.7rem; text-transform: none;}
+    60% { font-weight: 700; font-style: normal; text-decoration: none;text-transform: lowercase;}
+    70% { font-weight: 400; font-style: italic; text-decoration: underline; text-decoration-thickness: 0.7rem; text-underline-offset: 3rem; text-transform: capitalize;}
+}
+.block1 {
+    padding: 0.1% 0.2%;
+}
+.block1-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.1fr 0.8fr 0.1fr; 
+    grid-template-areas: 
+      "logo null"
+      "shortcut shortcut"
+      "left right"; 
+}
+/* .block1-grid div {
+    border: 1px dashed #7e7e7e;
+} */
+.null {
+    grid-area: null;
+}
+.shortcut {
+    grid-area: shortcut;
+}
+.text-left {
+    grid-area: left;
+}
+.text-right {
+    grid-area: right;
+}
+.text-logo {
+    grid-area: logo;
+}
+.text-logo h1 {
+    position: relative;
+    top: 2%;
+    left: 1.5%;
+}
+.shortcut div {
+    margin: 9.5% auto;
+}
+.text-left, .text-right {
+    font-size: 1rem; line-height: 1rem;
+}
+.text-left h2 {
+    position: relative;
+    margin-left: 1.5%;
+}
+.text-right h2 {
+    position: relative;
+    margin-left: 71%;
+}
+
+.block3 {
+    padding-top: 20%;
+}
+
+
+
+/* @font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:300;
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf") format("truetype");
+}
+@font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:400;
+    src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.eot");
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:600;
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf") format("truetype");
+} */
+
