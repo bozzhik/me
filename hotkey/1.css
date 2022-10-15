@@ -76,7 +76,8 @@ a {text-decoration: none;}
 }
 
 
-@font-face {
+
+/* @font-face {
     font-family:'SF Pro Display';
     font-style:normal;
     font-weight:300;
@@ -94,5 +95,5 @@ a {text-decoration: none;}
     font-style:normal;
     font-weight:600;
     src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf") format("truetype");
-}
+} */
 
