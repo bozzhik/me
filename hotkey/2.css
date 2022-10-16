@@ -343,3 +343,12 @@ button {
     top: 12.5%;
     right: 3%;
 }
+#email-form-done {
+    position: absolute;
+    left: 37.5%;
+    font-size: 1rem;
+    font-family: "SF Pro Display", sans-serif; 
+    font-style: normal; 
+    font-weight: 300; 
+    color: #CBFB45;
+}
