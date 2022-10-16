@@ -9,70 +9,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <body>
-<div class="block1">
-    <div class="block1-grid">
-        <div class="text-logo"><a href="/"><h1>hotkeys</h1></a></div><div class="null"></div>
-        <div class="shortcut"><div class="shortcut-text">CTRL+F</div></div>
-        <div class="text-left"><a href="about.html"><h2>архив шорткатов в разработке..</h2></a></div>
-        <div class="text-right"><a href="#mail"><h2>узнать о запуске ↓</h2></a></div>
-    </div>
-</div>
-<div class="block2">
 
-</div>
-
-
-
-
-
-<div class="block3">
-    <div id="mail">
-
-        <!-- modify this form HTML and place wherever you want your form -->
-<form id="my-form" action="https://formspree.io/f/mzbwvwen" method="POST">
-    <label>Email:</label>
-    <input type="email" name="email" />
-    <label>Message:</label>
-    <input type="text" name="message" />
-    <button id="my-form-button">Submit</button>
-    <p id="my-form-status"></p>
-  </form>
-  <!-- Place this script at the end of the body tag -->
-  <script>
-      var form = document.getElementById("my-form");
-      
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
-  </script>
   
+<div class="block2">
+  <div class="tags-index">
+    <div class="tags-index1">
+      <div class="ctrl-a"><div class="ctrl-a-text"><h3>Ctrl+A</h3></div></div>   
     </div>
+  </div>
+  <div class="startup-index">
+    <div class="startup-text-index">
+    <h4>Узнай о запуске <b>hotkeys!</b></h4>
+    </div>
+
+    <div class="startup-mail-index">
+      <form id="email" action="https://formspree.io/f/xknezdgr" method="POST">
+        <input type="email" name="email" />
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
+      
+      
+    </div>
+  </div>
 </div>
 
+
+
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
 </body>
 </html>
