@@ -106,8 +106,8 @@ h5 {
 .tags-index1-3 h3 {
     height: 50px;
     width: 166px;
-    border: 2.5px solid #515151;
-    background-color: #515151;
+    border: 2.5px solid #3A393E;
+    background-color: #3A393E;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -118,8 +118,8 @@ h5 {
     place-items: center;
 }
 .tags-index1-3 h3:hover {
-    background-color: #CBFB45;
-    border: 2.5px solid #CBFB45;
+    background-color: #3A393E;
+    border: 2.5px solid #3A393E;
 }
 .tags-index1-4 h3 {
     height: 50px;
@@ -150,8 +150,8 @@ h5 {
 .tags-index1-6 h3 {
     height: 50px;
     width: 132px;
-    border: 2.5px solid #515151;
-    background-color: #515151;
+    border: 2.5px solid #3A393E;
+    background-color: #3A393E;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -162,8 +162,8 @@ h5 {
     place-items: center;
 }
 .tags-index1-6 h3:hover {
-    background-color: #CBFB45;
-    border: 2.5px solid #CBFB45;
+    background-color: #3A393E;
+    border: 2.5px solid #3A393E;
 }
 .tags-index1-7 h3 {
     height: 50px;
@@ -194,8 +194,8 @@ h5 {
 .tags-index2-1 h3 {
     height: 50px;
     width: 132px;
-    border: 2.5px solid #515151;
-    background-color: #515151;
+    border: 2.5px solid #3A393E;
+    background-color: #3A393E;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -206,22 +206,8 @@ h5 {
     place-items: center;
 }
 .tags-index2-1 h3:hover {
-    background-color: #CBFB45;
-    border: 2.5px solid #CBFB45;
-}
-.tags-index2-1 h3 {
-    height: 50px;
-    width: 140px;
-    border: 2.5px solid #515151;
-    background-color: #515151;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: "SF Pro Display", sans-serif; 
-    font-style: normal; 
-    color: #0A0A0A;
-    display: grid;
-    place-items: center;
+    background-color: #3A393E;
+    border: 2.5px solid #3A393E;
 }
 .tags-index2-2 h3 {
     height: 50px;
@@ -239,8 +225,8 @@ h5 {
 .tags-index2-3 h3 {
     height: 50px;
     width: 132px;
-    border: 2.5px solid #CBFB45;
-    background-color: #CBFB45;
+    border: 2.5px solid #C4C4C4;
+    background-color: #C4C4C4;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -251,14 +237,14 @@ h5 {
     place-items: center;
 }
 .tags-index2-3 h3:hover {
-    background-color: #515151;
-    border: 2.5px solid #515151;
+    background-color: #CBFB45;
+    border: 2.5px solid #CBFB45
 }
 .tags-index2-4 h3 {
     height: 50px;
     width: 170px;
-    border: 2.5px solid #515151;
-    background-color: #515151;
+    border: 2.5px solid #CBFB45;
+    background-color: #CBFB45;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -269,8 +255,8 @@ h5 {
     place-items: center;
 }
 .tags-index2-4 h3:hover {
-    background-color: #CBFB45;
-    border: 2.5px solid #CBFB45;
+    background-color: #C4C4C4;
+    border: 2.5px solid #C4C4C4;
 }
 .tags-index2-5 h3 {
     height: 50px;
