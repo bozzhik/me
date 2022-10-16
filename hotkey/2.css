@@ -32,6 +32,7 @@ a {text-decoration: none;}
 
 
 .block2 {
+    padding-top: 5%;
     margin: 0 auto;
     max-width: 70%;;
     display: grid;
@@ -46,6 +47,7 @@ a {text-decoration: none;}
 }
 .startup-index {
     grid-area: startup;
+    margin: 0 auto;
 }
 .ctrl-a {
     width: 8%;
@@ -54,4 +56,61 @@ a {text-decoration: none;}
     border-radius: 42.1569px;
 }
 
-h4 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 300; color: #DADADA;}
+.startup-text-index {
+    padding-top: 26%;
+}
+.startup-text-index h4 {
+    font-size: 5.5rem;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.startup-text-index h5 {
+    padding-top: 4%;
+    font-size: 1.55rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.startup-email-index {
+    padding-top: 5.2%;
+}
+.email-form {
+    position: relative;
+    max-width: 46.5%;
+    margin: 0 auto;
+}
+.input-email {
+    color: #DADADA;
+    min-width: 420px;
+    min-height: 50px;
+    border: 1.5px solid #DADADA;
+    border-radius: 42.1569px;
+    background-color: #0A0A0A;
+}
+input[placeholder] {
+    padding-left: 5%;
+    font-size: 1.8rem;
+}
+.input-email::-webkit-input-placeholder {
+    color: #5d5d5d;
+}
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 13%;
+    right: 3%;
+}
+/* button::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23bdbdbd' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+h4 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 400; color: #DADADA;}
+h5 {font-family: "SF Pro Display", sans-serif; font-style: normal; font-weight: 300; color: #DADADA;}
