@@ -27,7 +27,7 @@ a {text-decoration: none;}
 .block1-grid {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.1fr 0.8fr 0.1fr; 
+    grid-template-rows: 20% 97% 3%;
     grid-template-areas: 
       "logo null"
       "shortcut shortcut"

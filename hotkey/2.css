@@ -352,3 +352,84 @@ button {
     font-weight: 300; 
     color: #CBFB45;
 }
+
+/* футер */
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 2%;
+    padding-top: 8%;
+}
+.footer-index a {
+    margin-right: 1%;
+}
+.footer-item-index1 h3 {
+    height: 50px;
+    width: 141px;
+    border: 2.5px solid #9C9C9C;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "SF Pro Display", sans-serif; 
+    font-style: normal; 
+    color: #9C9C9C;
+    display: grid;
+    place-items: center;
+}
+.footer-item-index1 h3:hover {
+    color: #CBFB45;
+    border: 2.5px solid #CBFB45;
+}
+.footer-item-index2 {
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid #9C9C9C;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "SF Pro Display", sans-serif; 
+    font-style: normal; 
+    color: #9C9C9C;
+    display: grid;
+    place-items: center;
+}
+.footer-item-index2:hover .footer-vk {
+    fill: #CBFB45;
+    border: 2.5px solid #CBFB45;
+}
+.footer-item-index3 {
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid #9C9C9C;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "SF Pro Display", sans-serif; 
+    font-style: normal; 
+    color: #9C9C9C;
+    display: grid;
+    place-items: center;
+}
+.footer-item-index3:hover .footer-dzen {
+    fill: #CBFB45;
+    border: 2.5px solid #CBFB45;
+}
+.footer-item-index4 {
+    height: 50px;
+    width: 50px;
+    border: 2.5px solid #9C9C9C;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "SF Pro Display", sans-serif; 
+    font-style: normal; 
+    color: #9C9C9C;
+    display: grid;
+    place-items: center;
+}
+.footer-item-index4:hover .footer-tg {
+    fill: #CBFB45;
+    border: 2.5px solid #CBFB45;
+}
