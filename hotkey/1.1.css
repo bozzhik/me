@@ -1,12 +1,17 @@
 .block1{
+    padding: 2%;
     display: flex;
+    flex-direction: column;
 }
 
-.block1-1 {
+.block1-logo {
     display: flex;
     justify-content: space-between;
 }
-
+.block1-text {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 body {background-color: #0A0A0A;}
@@ -31,9 +36,6 @@ a {text-decoration: none;}
     50% { font-weight: 100; font-style: italic; text-decoration-line: line-through; text-decoration-thickness: 0.7rem; text-transform: none;}
     60% { font-weight: 700; font-style: normal; text-decoration: none;text-transform: lowercase;}
     70% { font-weight: 400; font-style: italic; text-decoration: underline; text-decoration-thickness: 0.7rem; text-underline-offset: 3rem; text-transform: capitalize;}
-}
-.block1 {
-    padding: 0.1% 0.2%;
 }
 
 /* .block1-grid div {
@@ -65,14 +67,14 @@ a {text-decoration: none;}
 .text-left, .text-right {
     font-size: 1rem; line-height: 1rem;
 }
-.text-left h2 {
+/* .text-left h2 {
     position: relative;
     margin-left: 1.5%;
 }
 .text-right h2 {
     position: relative;
     margin-left: 71%;
-}
+} */
 
 .block3 {
     padding-top: 20%;
