@@ -1,3 +1,40 @@
 body {
     background-color: #0a0a0a;
 }
+
+.content {
+    position: relative;
+    z-index: 9;
+    padding: 2% 4%;
+}
+
+.mail-text-index {
+    padding-top: 9%;
+}
+
+.mail-text-index h4 {
+    font-size: 5.2rem;
+    line-height: 5.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.back-keyboards {
+    position: absolute;
+    left: 40.3%;
+    top: 0%;
+    transform: scale(1);
+}
+
+
+
+
+    /* .mail-text-index h5 {
+        padding-top: 3%;
+        font-size: 1.55rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.07rem;
+        text-align: center;
+        font-weight: 300;
+        color: #fff;
+    } */
