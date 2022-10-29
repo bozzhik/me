@@ -1,11 +1,9 @@
-# INTERACTIVE POSTER - a project for learning `JavaScript` 👨‍💻
-
+# MY LINKS - a project for my `LINKS` 🧨
 <pre>
-This project was created to continue the practice of site layout and to learn how to make web animations
+
+This project was created to quickly send my links, redirect links and to practice writing <kbd>CODE</kbd> 
 </pre>
-
-![Alt-текст](https://github.com/bozzhik/interactive/blob/main/img/scroll.gif 'wiki')
-
+![Alt-текст](https://github.com/bozzhik/z/blob/main/img/scroll.gif "wiki")
 <pre>
-This is an integral part of the following projects for the <kbd>ЮЗБ ФАРМ</kbd> organization
+This is an integral part of <kbd>simple projects</kbd>
 </pre>
