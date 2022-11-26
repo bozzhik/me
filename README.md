@@ -1,5 +1,5 @@
-# MY LINKS - a project for my `LINKS` 🧨
+# draft project 🧨
 <pre>
 
-This project was created to quickly send my links, redirect links and to practice writing <kbd>CODE</kbd> 
+I use it as a redirect for my <kbd>github</kbd> projects
 </pre>
