@@ -1,12 +1,12 @@
 $black: #0a0a0a;
-$black2: #1e1e1e;
-$black-hov: #141414;
-$white: #dadada;
-$white-hov: #868686;
-$grey: #9c9c9c;
-$grey2: #515151;
-$grey3: #c4c4c4;
+$white: #eee;
+$white-dark: #b4b4b4;
+$grey: #595959;
 $green: #cbfb45;
+
+$black-hov: #141414;
+$white-hov: #868686;
+$black2: #1e1e1e;
 
 @mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
    width: $w;
@@ -90,24 +90,18 @@ body.index {
 
    // 1 screen
 
-   .block1 {
-      padding: 1.5% 2% 2% 2%;
+   .block-main {
+      margin: 2.5vw;
       display: flex;
       flex-direction: column;
    }
 
-   .block1-logo {
+   .block-main-header {
       display: flex;
       justify-content: space-between;
 
-      & h1 {
-         font-size: 3rem;
-         font-weight: 600;
-         color: $white;
-
-         &:hover {
-            color: $green;
-         }
+      & svg {
+         width: 11.98vw;
       }
    }
 
@@ -274,7 +268,7 @@ body.index {
             }
 
             .input-email::-webkit-input-placeholder {
-               color: $grey2;
+               color: $grey;
             }
 
             button {
