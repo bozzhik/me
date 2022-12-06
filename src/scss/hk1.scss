@@ -8,30 +8,6 @@ $black-hov: #141414;
 $white-hov: #868686;
 $black2: #1e1e1e;
 
-@mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
-   width: $w;
-   height: $h;
-   color: $c;
-   background-color: $bc;
-   border: $b;
-   border-radius: $br;
-   font-size: $fs;
-   font-weight: $fw;
-}
-
-@mixin itemOpenConfig($c, $bc, $b, $fw) {
-   color: $c;
-   background-color: $bc;
-   border: $b;
-   font-weight: $fw;
-}
-
-@mixin itemGrid {
-   display: grid;
-   place-items: center;
-}
-
-// catalog---selections
 /**
    * style items
    * * нужно глянуть как они адаптируются
@@ -39,44 +15,6 @@ $black2: #1e1e1e;
    * ? нужно ли их делать миксинами
    * TODO: доделать грид сетку каталога и подборок 
 */
-
-%menu-shortcut {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   height: 300px;
-   width: 435px;
-   border-radius: 27px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: $white;
-   background-color: $black2;
-   cursor: help;
-}
-
-%menu-shortcut-hover {
-   color: $white-hov;
-   background-color: $black-hov;
-}
-
-%menu-selection {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   height: 235px;
-   width: 585px;
-   border-radius: 27px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: $white;
-   background-color: $black2;
-   cursor: help;
-}
-
-%menu-selection-hover {
-   color: $white-hov;
-   background-color: $black-hov;
-}
 
 html.index {
    scroll-behavior: smooth;
@@ -88,7 +26,9 @@ body.index {
    font-family: 'Inter', sans-serif;
    font-style: normal;
 
-   // 1 screen
+   & a {
+      color: $white;
+   }
 
    .block-main {
       margin: 2.5vw;
@@ -105,13 +45,12 @@ body.index {
       }
    }
 
-   .block1-shortcut {
+   .block-main-shortcut {
       color: $white;
 
       & div {
-         margin: 3% auto 9% auto;
-         font-size: 25rem;
-         font-weight: 600;
+         margin: 4vw auto 10vw auto;
+         font-size: 20vw;
          text-align: center;
          animation: change-text 3.5s infinite;
          // animation-play-state: running;
@@ -181,21 +120,30 @@ body.index {
       }
    }
 
-   .block1-text {
+   .block-main-also {
       display: flex;
       justify-content: space-between;
 
-      & h2 {
-         font-size: 1.55rem;
-         line-height: 1rem;
-         font-weight: 400;
-         color: $white;
-
-         &:hover {
-            color: $green;
-         }
+      & a {
+         color: #cbfb45;
       }
    }
+
+   // .block1-text {
+   //    display: flex;
+   //    justify-content: space-between;
+
+   //    & h2 {
+   //       font-size: 1.55rem;
+   //       line-height: 1rem;
+   //       font-weight: 400;
+   //       color: $white;
+
+   //       &:hover {
+   //          color: $green;
+   //       }
+   //    }
+   // }
 
    // 2 screen
 
