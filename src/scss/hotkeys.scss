@@ -37,15 +37,15 @@ body.about {
    }
 
    & h4 {
+      color: $white;
       font-size: 1.15vw;
       font-weight: 200;
-      color: $white;
       text-align: center;
    }
 
    & h5 {
-      font-size: 2.5vw;
       color: $white;
+      font-size: 2.5vw;
       font-weight: 500;
       text-align: center;
       letter-spacing: 0.1vw;
@@ -156,6 +156,72 @@ body.about {
       & h5 {
          padding-top: 2.5vw;
          line-height: 115%;
+      }
+   }
+
+   @mixin itemTeam($w, $h, $b, $br) {
+      width: $w;
+      height: $h;
+      border: $b;
+      border-radius: $br;
+   }
+
+   .items-team {
+      padding-top: 1vw;
+      margin: 0 auto;
+      width: 94vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .item-bozhik {
+         background-color: $green;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         & h1 {
+            margin: 1.25vw;
+            color: $black;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+      }
+
+      .item-day {
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         & h1 {
+            margin: 1.25vw;
+            color: $white;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+      }
+
+      .item-gulevich {
+         background-color: $green;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         & h1 {
+            margin: 1.25vw;
+            color: $black;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+      }
+
+      .item-kaem {
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         & h1 {
+            margin: 1.25vw;
+            color: $white;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
       }
    }
 }
