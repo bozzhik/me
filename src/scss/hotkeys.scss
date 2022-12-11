@@ -388,6 +388,16 @@ body.about {
          }
       }
    }
+
+   .title-form {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 115%;
+      }
+   }
 }
 
 //
