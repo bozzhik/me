@@ -38,7 +38,7 @@ body.about {
 
    & h4 {
       font-size: 1.15vw;
-      font-weight: 300;
+      font-weight: 200;
       color: $white;
       text-align: center;
    }
@@ -78,21 +78,21 @@ body.about {
 
       & img {
          width: 100%;
-         transition: 0.5s ease-in-out;
       }
 
       &:hover {
+         transition: 0.5s ease-in-out;
          transform: scale(1.01);
       }
    }
 
    .title-research {
-      padding: 15vw 0 2.5vw 0;
+      padding: 15vw 0 3.5vw 0;
       margin: 0 auto;
 
       & h5 {
          padding-top: 2.5vw;
-         line-height: 120%;
+         line-height: 115%;
       }
    }
 
@@ -102,15 +102,70 @@ body.about {
 
       & img {
          width: 100%;
-         transition: 0.5s ease-in-out;
       }
 
       &:hover {
+         transition: 0.5s ease-in-out;
          transform: scale(1.01);
+      }
+   }
+
+   .title-often {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h4 {
+         padding-top: 2.5vw;
+         line-height: 1.5vw;
+
+         & span {
+            font-weight: 450;
+            font-style: italic;
+            color: $green;
+            text-transform: uppercase;
+
+            &:hover {
+               color: $grey;
+            }
+         }
+      }
+
+      & h5 {
+         line-height: 115%;
+      }
+   }
+
+   .img-often {
+      margin: 0 auto;
+      max-width: 74.5vw;
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .title-team {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 115%;
       }
    }
 }
 
+//
+
+//
+//
+//
+//
 // body.index {
 
 //    .block-main {
