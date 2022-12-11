@@ -162,7 +162,7 @@ body.about {
    @mixin itemTeam($w, $h, $b, $br) {
       width: $w;
       height: $h;
-      border: $b;
+      outline: $b;
       border-radius: $br;
    }
 
@@ -175,8 +175,24 @@ body.about {
       justify-content: space-between;
 
       .item-bozhik {
+         position: relative;
          background-color: $green;
          @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('../img/team-bozhik.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-bozhik-info {
+            visibility: visible;
+         }
 
          & h1 {
             margin: 1.25vw;
@@ -184,11 +200,52 @@ body.about {
             font-size: 3.13vw;
             font-weight: 500;
             line-height: 75%;
+         }
+
+         .item-bozhik-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
          }
       }
 
       .item-day {
+         position: relative;
          @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('../img/team-day.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-day-info {
+            visibility: visible;
+         }
 
          & h1 {
             margin: 1.25vw;
@@ -197,11 +254,52 @@ body.about {
             font-weight: 500;
             line-height: 75%;
          }
+
+         .item-day-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
       }
 
       .item-gulevich {
+         position: relative;
          background-color: $green;
          @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('../img/team-gulevich.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-gulevich-info {
+            visibility: visible;
+         }
 
          & h1 {
             margin: 1.25vw;
@@ -210,10 +308,51 @@ body.about {
             font-weight: 500;
             line-height: 75%;
          }
+
+         .item-gulevich-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
       }
 
       .item-kaem {
+         position: relative;
          @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('../img/team-kaem.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-kaem-info {
+            visibility: visible;
+         }
 
          & h1 {
             margin: 1.25vw;
@@ -221,6 +360,31 @@ body.about {
             font-size: 3.13vw;
             font-weight: 500;
             line-height: 75%;
+         }
+
+         .item-kaem-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
          }
       }
    }
