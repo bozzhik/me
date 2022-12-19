@@ -25,6 +25,10 @@ body.training {
          line-height: 120%;
          letter-spacing: -0.03em;
          transition: all 2s ease;
+
+         & b {
+            color: #cbfb45;
+         }
       }
 
       #shortcut {
