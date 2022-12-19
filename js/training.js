@@ -1,31 +1,44 @@
-// Select the h1 element
 const h1 = document.querySelector('h1')
+const h3 = document.querySelector('h3')
+const shortcuts = ['Ctrl+F5', 'Ctrl+F6', 'Ctrl+F7']
+const shortcutsUse = ['скопировать', 'вставить', 'вырезать']
 
-// Set the initial level and array of key combinations
-let level = 1
-const keyCombinations = [['Ctrl+Shift+H'], ['Ctrl+Shift+J'], ['Ctrl+Shift+K']]
+let keyCombination = shortcuts[0]
 
-// Add an event listener to the document to listen for keydown events
+h1.innerHTML = `${keyCombination}`
+
 document.addEventListener('keydown', function (event) {
-   // Get the current level's key combinations
-   const currentKeys = keyCombinations[level - 1]
+   event.preventDefault()
 
-   // Loop through the current level's key combinations
-   for (let i = 0; i < currentKeys.length; i++) {
-      // Split the key combination string into its component keys
-      const keys = currentKeys[i].split('+')
+   if (event.ctrlKey && event.key === 'F5') {
+      h1.style.color = 'green'
+      h3.innerHTML = `Нажмите ${keyCombination} чтобы ${shortcutsUse[0]}`
 
-      // Check if the key combination is pressed
-      if (keys.includes('Ctrl') && event.ctrlKey && keys.includes('Shift') && event.shiftKey && keys.includes(event.key)) {
-         // If the key combination is pressed, advance to the next level
-         level++
-         // Update the h1 element's text to show the new level
-         h1.innerHTML = `Level ${level}`
-         // Highlight the h1 element in green
-         h1.style.color = 'green'
-      } else {
-         // If the key combination is not pressed, keep the h1 element red
-         h1.style.color = 'red'
-      }
+      setTimeout(() => {
+         keyCombination = 'Ctrl+F6'
+         h1.innerHTML = `${keyCombination}`
+         h3.innerHTML = ``
+         h1.style.color = 'white'
+      }, 3000)
+   } else if (event.ctrlKey && event.key === 'F6') {
+      h1.style.color = 'green'
+      h3.innerHTML = `Нажмите ${keyCombination} чтобы ${shortcutsUse[1]}`
+
+      setTimeout(() => {
+         keyCombination = 'Ctrl+F7'
+         h1.innerHTML = `${keyCombination}`
+         h3.innerHTML = ``
+         h1.style.color = 'white'
+      }, 3000)
+   } else if (event.ctrlKey && event.key === 'F7') {
+      h1.style.color = 'green'
+      h3.innerHTML = `Нажмите ${keyCombination} чтобы ${shortcutsUse[2]}`
+
+      setTimeout(() => {
+         keyCombination = 'Ctrl+F8'
+         h1.innerHTML = `${keyCombination}`
+         h3.innerHTML = ``
+         h1.style.color = 'white'
+      }, 3000)
    }
 })
