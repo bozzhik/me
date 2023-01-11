@@ -2,17 +2,10 @@
 @import 'css/index.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
    --black: #0a0a0a;
    --grey: #5d5d5d;
    --white: #dadada;
-   --low-black: #151515;
-   --dark-grey: #252525;
-   --web: #3b82f6;
-   --web-bg: #3b82f610;
-   --js: #faff00;
-   --js-bg: #faff0010;
-   --design: #ec4899;
-   --design-bg: #ec489910;
    --some: #cbfb45;
 }
